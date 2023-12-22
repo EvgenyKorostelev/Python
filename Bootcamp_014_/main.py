@@ -35,9 +35,9 @@ def register():
 @app.route("/authorization", methods=["GET", "POST"])
 def authorization():
     form = AuthorizationForm()
-    # if form.validate_on_submit():
-    #     print(form.data) # dictionary(словарь)
-    #     print(form.data['mail'], form.data['password'])
+    if form.validate_on_submit():
+        print(form.data) # dictionary(словарь)
+        print(form.data['mail'], form.data['password'])
     return render_template("authorization.html", form=form)
 
 
