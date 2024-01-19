@@ -1,3 +1,4 @@
+
 # a = 3
 # b = 2
 # c = 4
@@ -68,3 +69,35 @@
 
 # =================================================================
 
+# list_1 = [1, 12, 6, 7, 8, 15]
+# k = 11
+
+# near = list_1[0]
+# temp = abs(list_1[0] - k) # abs() модуль числа
+
+# for i in range (len(list_1)):
+#     if list_1[i] * k == k * k:
+#         near = list_1[i]
+#         break
+#     else:
+#         if abs(list_1[i] - k) < temp:
+#             temp = abs(list_1[i] - k)
+#             near = list_1[i]        
+# print(near) 
+
+# =================================================================
+k = 'ноутбук'
+tempK = k.upper()
+count = 0
+eng = [{"AEIOULNSTRАВЕИНОРСТ": 1}, {"DGДКЛМПУ": 2}, {"BCMPБГЁЬЯ": 3}, {"FHVWYЙЫ": 4}, {"KЖЗХЦЧ": 5}, {"JXШЭЮ": 8}, {"QZФЩЪ": 10}]
+# ru = tuple({1: "АВЕИНОРСТ"},{2: "ДКЛМПУ"}, {3: "БГЁЬЯ"}, {4: "ЙЫ"}, {5: "ЖЗХЦЧ"}, {8: "ШЭЮ"}, {10: "ФЩЪ"})
+
+for i in tempK:
+    for dict in eng:
+        # print(dict)
+        for value in dict:
+            # print(value)
+            for j in value:
+                if j == i:
+                    count += dict.get(value)
+print(count)                    
