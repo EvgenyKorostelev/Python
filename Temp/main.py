@@ -86,18 +86,23 @@
 # print(near) 
 
 # =================================================================
-k = 'ноутбук'
-tempK = k.upper()
-count = 0
-eng = [{"AEIOULNSTRАВЕИНОРСТ": 1}, {"DGДКЛМПУ": 2}, {"BCMPБГЁЬЯ": 3}, {"FHVWYЙЫ": 4}, {"KЖЗХЦЧ": 5}, {"JXШЭЮ": 8}, {"QZФЩЪ": 10}]
-# ru = tuple({1: "АВЕИНОРСТ"},{2: "ДКЛМПУ"}, {3: "БГЁЬЯ"}, {4: "ЙЫ"}, {5: "ЖЗХЦЧ"}, {8: "ШЭЮ"}, {10: "ФЩЪ"})
 
-for i in tempK:
-    for dict in eng:
-        # print(dict)
-        for value in dict:
-            # print(value)
-            for j in value:
-                if j == i:
-                    count += dict.get(value)
-print(count)                    
+# k = 'ноутбук'
+# tempK = k.upper()
+# count = 0
+# eng = [{"AEIOULNSTRАВЕИНОРСТ": 1}, {"DGДКЛМПУ": 2}, {"BCMPБГЁЬЯ": 3}, {"FHVWYЙЫ": 4}, {"KЖЗХЦЧ": 5}, {"JXШЭЮ": 8}, {"QZФЩЪ": 10}]
+# # ru = tuple({1: "АВЕИНОРСТ"},{2: "ДКЛМПУ"}, {3: "БГЁЬЯ"}, {4: "ЙЫ"}, {5: "ЖЗХЦЧ"}, {8: "ШЭЮ"}, {10: "ФЩЪ"})
+
+# for i in tempK:
+#     for dict in eng:
+#         # print(dict)
+#         for value in dict:
+#             # print(value)
+#             for j in value:
+#                 if j == i:
+#                     count += dict.get(value)
+# print(count)   
+
+# =================================================================
+
+                 
