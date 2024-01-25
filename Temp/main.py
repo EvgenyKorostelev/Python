@@ -105,4 +105,33 @@
 
 # =================================================================
 
-                 
+# var1 = '5 4' 
+# var2 = '1 3 5 7 9' 
+# var3 = '2 3 4 5'
+# x = var2.split()
+# y = var3.split()
+# varTemp = set()
+# for i in x:
+#     for j in y:
+#         if j == i:
+#             varTemp.add(j)
+# varEnd = list(sorted(varTemp))
+# print(*varEnd)            
+
+# =================================================================
+
+# arr = [5, 8, 6, 4, 9, 2, 7, 3]
+# countMax = 0
+# count = 0
+# for i in range (len(arr)):
+#     if i == 0:
+#         count = arr[len(arr) - 1] + arr[i] + arr[i + 1]
+#     elif i == len(arr) - 1:
+#         count = arr[i - 1] + arr[i] + arr[0]
+#     else:    
+#         count = arr[i-1] + arr[i] + arr[i + 1]
+#         if countMax < count:
+#             countMax = count
+# print(countMax)      
+
+# =================================================================
