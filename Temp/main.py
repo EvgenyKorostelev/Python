@@ -135,3 +135,22 @@
 # print(countMax)      
 
 # =================================================================
+
+# def sum(a, b):
+#     if a > 0 and b > 0:
+#         count = sum(a-1, b-1) + 1 + 1
+#         return count
+#     elif a > 0 or b > 0:
+#         count = sum(a-1, b-1) + 1
+#         return count
+#     else:
+#         return 0
+
+# a = 2
+# b = 2
+# print(sum(a, b))
+
+ # =================================================================
+
+
+        
