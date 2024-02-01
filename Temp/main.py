@@ -153,4 +153,20 @@
  # =================================================================
 
 
-        
+# list1 = [1,2,3,5,8,15,23,38]
+# list2 = list()
+# temp = 0
+# for i in list1:
+#     if i % 2 == 0:
+#         list2.append((i,i**2))
+# print(list2)        
+
+ # =================================================================
+
+orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+
+def find_farthest_orbit(list_of_orbits):
+    orb = [(3.14*x*y) for x,y in list_of_orbits if x != y]
+    return orb.index(max(orb))
+    
+print(orbits[find_farthest_orbit(orbits)])
