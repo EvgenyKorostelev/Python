@@ -271,3 +271,13 @@
 #             print()
 
 # print_operation_table(lambda x, y: x * y) 
+
+# =================================================================
+
+str = '2;n2;s2;p2;a2'
+varInf = input()
+temp = str.split(';')
+                  
+if temp[0] == varInf:
+    name = temp[1]
+    print(name)

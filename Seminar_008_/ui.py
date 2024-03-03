@@ -1,19 +1,27 @@
-from logger import input_data, print_data
-
+from logger import input_data, print_data, transform_data, copy_data, delete_data
 
 def interface():
-    print('Р”РѕР±СЂС‹Р№ РґРµРЅСЊ! Р­С‚Рѕ Р±РѕС‚-РїРѕРјРѕС‰РЅРёРє. \n'
-          'Р§С‚Рѕ РІС‹ С…РѕС‚РёС‚Рµ СЃРґРµР»Р°С‚СЊ? \n'
-          '1 - Р—Р°РїРёСЃР°С‚СЊ РґР°РЅРЅС‹Рµ \n'
-          '2 - Р’С‹РІРµСЃС‚Рё РґР°РЅРЅС‹Рµ')
-    command = int(input('Р’Р°С€ РІС‹Р±РѕСЂ: '))
+    print('Добрый день! Это бот помощник. \n'
+          'Что Вы хотите сделать? \n'
+          '1 - Записать данные \n'
+          '2 - Вывести данные \n'
+          '3 - Изменить данные \n'
+          '4 - Перенести данные \n'
+          '5 - Удалить данные')
+    command = int(input('Ваш выбор: '))
 
-    while command < 1 or command > 2:
-        command = int(input('РћС€РёР±РєР°! Р’Р°С€ РІС‹Р±РѕСЂ: '))
+    while command < 1 or command > 5:
+        command = int(input('Ошибка! Ваш выбор: '))
 
     if command == 1:
         input_data()
     elif command == 2:
         print_data()
+    elif command == 3:
+        transform_data()
+    elif command == 4:
+        copy_data()    
+    elif command == 5:
+        delete_data()
 
 interface()
